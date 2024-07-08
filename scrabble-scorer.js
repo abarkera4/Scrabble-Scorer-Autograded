@@ -99,7 +99,7 @@ function scorerPrompt(word1) {
    console.log(`0 - ${scoringAlgorithms[0].name}: ${scoringAlgorithms[0].description}`)
    console.log(`1 - ${scoringAlgorithms[1].name}: ${scoringAlgorithms[1].description}`)
    console.log(`2 - ${scoringAlgorithms[2].name}: ${scoringAlgorithms[2].description}`)
-
+   while (scorerChoice < 0 || scorerChoice > 2 || isNaN(scorerChoice))
    scorerChoice = input.question("Enter 0, 1, or 2: ")
 
    console.log(`Score for ${word1} : `, scoringAlgorithms[scorerChoice].scorerFunction(word1))
