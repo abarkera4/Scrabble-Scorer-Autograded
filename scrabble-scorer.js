@@ -48,6 +48,7 @@ let vowelPointStructure = {
 };
 
 let newPointStructure = transform(oldPointStructure)
+newPointStructure[" "] = 0
 
 let simpleScorer = function(word) { return word.length};
 
